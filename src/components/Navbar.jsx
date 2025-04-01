@@ -5,20 +5,21 @@ import logo from '../assets/logoVisible.png'; // Importa el logo
 
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg" style={{ backgroundColor: '#4A2C1F', fontFamily: 'Georgia, serif' }}>
+    <nav className="navbar navbar-expand-lg" style={{ backgroundColor: '#4A2C1F', fontFamily: "'Playfair Display', serif",
+      padding: '0.8rem 1rem' }}>
       <div className="container-fluid">
         {/* Logo y texto "Elegantía estores y cortinas" */}
         <div className="d-flex align-items-center">
           <img
             src={logo}
-            alt="Logo Elegantía"
+            alt="Logo Ellegantia"
             style={{
-              width: '50px', // Tamaño del logo
-              height: '50px',
-              marginRight: '10px', // Espacio entre el logo y el texto
+              width: '55px', // Tamaño del logo
+              height: '55px',
+              marginRight: '12px', // Espacio entre el logo y el texto
             }}
           />
-          <Link to="/" className="navbar-brand" style={{ color: '#FFFFFF', fontSize: '1.2rem' }}>
+          <Link to="/" className="navbar-brand" style={{ color: '#FFFFFF', fontSize: '1.4rem', }}>
             Ellegantia estores y cortinas
           </Link>
         </div>
@@ -75,6 +76,32 @@ const Navbar = () => {
             </Link>
             <Link to="/user" className="nav-link">
               <FaUser style={{ color: '#FFFFFF', fontSize: '1.5rem' }} /> {/* Icono de usuario en blanco */}
+            </Link>
+             {/* Botón de Registro */}
+             <Link 
+              to="/register" 
+              className="btn btn-outline-light"
+              style={{
+                fontFamily: "'Playfair Display', serif",
+                fontWeight: '500',
+                fontSize: '1.1rem',
+                border: '1.5px solid #F5E7D4',
+                color: '#F5E7D4',
+                textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.3)',
+                borderRadius: '4px',
+                padding: '6px 18px',
+                transition: 'all 0.3s ease'
+              }}
+              onMouseOver={(e) => {
+                e.target.style.backgroundColor = '#F5E7D4';
+                e.target.style.color = '#4A2C1F';
+              }}
+              onMouseOut={(e) => {
+                e.target.style.backgroundColor = 'transparent';
+                e.target.style.color = '#F5E7D4';
+              }}
+            >
+              Registro
             </Link>
           </div>
         </div>
