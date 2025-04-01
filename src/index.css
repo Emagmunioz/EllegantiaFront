@@ -1,0 +1,60 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+body {
+  font-family: 'Arial', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Georgia', serif;
+}
+.hero-section {
+  background-size: cover;
+  color: white;
+  padding: 100px 0;
+}
+
+.product-section img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.testimonials-section blockquote {
+  font-style: italic;
+  color: #555;
+}
+
+/* Estilo para el botón "Ver más" */
+.home-button {
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 2px solid #6B4423;
+  color: #6B4423;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: rgba(19, 18, 18, 0.1);
+  color: #fff;
+}
+/* Estilo para la Navbar */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para los enlaces de la Navbar */
+.navbar .nav-link {
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+  color: #f8f9fa; /* Color más claro al hacer hover */
+}
+
+/* Estilo para el Footer */
+footer {
+  border-top: 1px solid rgba(19, 18, 18, 0.1); /* Borde superior sutil */
+}
