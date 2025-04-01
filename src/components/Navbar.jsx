@@ -84,12 +84,12 @@ const Navbar = () => {
               style={{
                 fontFamily: "'Playfair Display', serif",
                 fontWeight: '500',
-                fontSize: '1.1rem',
+                fontSize: '1.0rem',
                 border: '1.5px solid #F5E7D4',
                 color: '#F5E7D4',
                 textShadow: '0.5px 0.5px 1px rgba(0,0,0,0.3)',
                 borderRadius: '4px',
-                padding: '6px 18px',
+                padding: '6px 16px',
                 transition: 'all 0.3s ease'
               }}
               onMouseOver={(e) => {
