@@ -1,0 +1,42 @@
+.color-selector-container {
+    margin-bottom: 25px;
+  }
+  
+  .color-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+  
+  .color-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  .color-card.selected {
+    border: 3px solid #4A2C1F;
+  }
+  
+  .color-image {
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 8px;
+  }
+  
+  .color-info {
+    text-align: center;
+  }
+  
+  .color-name {
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .color-ref {
+    margin: 0;
+    font-size: 0.9em;
+  }

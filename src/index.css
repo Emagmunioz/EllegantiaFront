@@ -58,3 +58,29 @@ h1, h2, h3, h4, h5, h6 {
 footer {
   border-top: 1px solid rgba(19, 18, 18, 0.1); /* Borde superior sutil */
 }
+/* Efectos hover para la card */
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividad para las cards */
+@media (max-width: 768px) {
+  .product-card {
+    margin-bottom: 20px;
+  }
+  
+  .card-title-overlay h3 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-title-overlay h3 {
+    font-size: 1rem;
+  }
+  
+  .card-image-container {
+    height: 150px;
+  }
+}

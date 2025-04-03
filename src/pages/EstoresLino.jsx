@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom';
 
 // Importa las imágenes
 import estoresLino from '../assets/pagina_estoresLino.jpg';
-import color1 from '../assets/lino-blanco.jpg';
+import color1 from '../assets/lino-blanco.webp';
 import color2 from '../assets/lino-beige.webp';
 import color3 from '../assets/lino-saco.jpg';
-import color4 from '../assets/lino-humo.jpg';
+import color4 from '../assets/lino-gris.webp';
 
 // Estilos para las ventanas emergentes
 const customStyles = {

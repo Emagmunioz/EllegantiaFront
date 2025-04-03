@@ -1,38 +1,11 @@
 import React, { useState } from 'react';
-import Modal from 'react-modal';
 import { Link } from 'react-router-dom';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
+import ColorSelectorLino from '../components/colorSelector/ColorSelectorScreen';
+import ColorSelectorScreen from '../components/colorSelector/ColorSelectorLino';
+import MeasureForm from '../components/measureForm/MeasureForm';
 
-// Estilos para las ventanas emergentes
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    backgroundColor: '#F5F5DC', // Fondo beige
-    border: '2px solid #4A2C1F', // Borde grano de café
-    borderRadius: '10px',
-    padding: '20px',
-  },
-};
-
-const CalculatePriceModal = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(false);
-  const [width, setWidth] = useState(40); // Ancho inicial de 40 cm
-  const [height, setHeight] = useState(60); // Alto inicial de 60 cm
-  const [price, setPrice] = useState(null); // Precio calculado
-
-  // Función para abrir la ventana emergente
-  const openModal = () => {
-    setModalIsOpen(true);
-  };
-
-  // Función para cerrar la ventana emergente
-  const closeModal = () => {
-    setModalIsOpen(false);
-  };
 
   // Función para calcular el precio
   const calculatePrice = () => {
@@ -43,28 +16,10 @@ const CalculatePriceModal = () => {
   };
 
   return (
-    <div>
-      {/* Botón para abrir el modal */}
-      <button
-        onClick={openModal}
-        style={{
-          padding: '10px 20px',
-          backgroundColor: 'transparent',
-          border: '2px solid #4A2C1F',
-          color: '#4A2C1F',
-          borderRadius: '5px',
-          cursor: 'pointer',
-        }}
-      >
-        Calcular Precio
-      </button>
-
-      {/* Modal */}
-      <Modal
-        isOpen={modalIsOpen}
-        onRequestClose={closeModal}
-        style={customStyles}
-      >
+    
+      
+       <div>
+      
         <h2>Calcula el precio de la cortina</h2>
         <p>Introduce las medidas para calcular el precio.</p>
 
@@ -129,24 +84,9 @@ const CalculatePriceModal = () => {
           </button>
         </Link>
 
-        {/* Botón para cerrar el modal */}
-        <button
-          onClick={closeModal}
-          style={{
-            padding: '10px 20px',
-            backgroundColor: 'transparent',
-            border: '2px solid #4A2C1F',
-            color: '#4A2C1F',
-            borderRadius: '5px',
-            cursor: 'pointer',
-            marginLeft: '10px',
-          }}
-        >
-          Cerrar
-        </button>
-      </Modal>
+        
     </div>
   );
-};
 
-export default CalculatePriceModal;
+
+export default CalculatePrice;
